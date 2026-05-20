@@ -13,7 +13,7 @@ st.set_page_config(page_title="AA Sky Deck v8.1", layout="wide", page_icon="âœˆï
 # --- 1. DATA ENGINE (High AUC Optimization) ---
 @st.cache_data
 def sync_data_engine():
-    f_path = 'data/Flight_Data_With_Weather_FINAL.csv'
+    f_path = 'Flight_Data_With_Weather_FINAL.csv'
     if not os.path.exists(f_path): 
         f_path = 'data/Processed_Assignment_Weather_Data.csv'
     
